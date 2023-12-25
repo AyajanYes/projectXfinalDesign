@@ -41,8 +41,7 @@ const sr = ScrollReveal({
   reset: true,
 });
 
-sr.reveal(`.package__data,
-           .aboutUs__data, .benefits__data`,  {
+sr.reveal(`.package__data, .benefits__data`,  {
   origin: 'top',
   interval: 200,
 })
