@@ -118,7 +118,7 @@ img{
   position: fixed;
   top: 0;
   left: 0;
-  z-index: var(--z-fixed);
+  z-index: 10;
   background-color: var(--container-color);
 }
 
@@ -152,7 +152,7 @@ img{
     background-color: var(--container-color);
     transition: .6s;
     box-shadow: 0px 34px 40px -7px rgba(34, 60, 80, 0.31);
-    z-index: 5;
+    z-index: 10;
   }
 }
 
