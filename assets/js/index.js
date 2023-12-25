@@ -41,23 +41,18 @@ const sr = ScrollReveal({
   reset: true,
 });
 
-sr.reveal(`.package__data, .feedback__container,
-           .aboutUs__data`, {
+sr.reveal(`.package__data,
+           .aboutUs__data, .benefits__data`,  {
   origin: 'top',
   interval: 200,
 })
 
-sr.reveal(`.home__data`, {
+sr.reveal(`.card-wrapper`, {
   origin: 'left'
 })
 
-sr.reveal(`.home__img`, {
-  origin: 'right'
-})
-
 var swiper = new Swiper(".slide-content", {
-  slidesPerView: 3,
-  spaceBetween: 25,
+  effect: 'cards',
   loop: true,
   centerSlides: 'true',
   fade: 'true',
@@ -71,16 +66,52 @@ var swiper = new Swiper(".slide-content", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    620: {
-      slidesPerView: 2,
-    },
-    950: {
-      slidesPerView: 3,
-    },
-  },
 });
+
+/*==================== MODAL WINDOW ====================*/
+
+const feedback = document.querySelector('#feedback')
+const feedbackClose = document.querySelector('#feedback-close')
+const main = document.querySelector('#main')
+
+main.addEventListener('click', (event) => {
+  const isButton = event.target.nodeName === 'A';
+  if (isButton) {
+    feedback.style.display = 'block'
+  } 
+  else return;
+})
+
+feedbackClose.addEventListener('click', () => {
+  console.log('hellllooooo')
+  feedback.style.display = 'none'
+})
+
+window.onclick = function(event) {
+  if (event.target == feedback) {
+    feedback.style.display = "none";
+  }
+}
+
+/*==================== PHONE ====================*/
+const phoneInputField = document.querySelector("#phone");
+   const phoneInputCountry = window.intlTelInput(phoneInputField, {
+    separateDialCode: true,
+    initialCountry: "KZ",
+    utilsScript:
+      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+   });
+
+
+const userName = document.querySelector("#name");
+const phone = document.querySelector("#phone");
+const form = document.querySelector("#form");
+const errorEl = document.getElementById("error");
+
+form.addEventListener('submit', (e) => {
+  if(userName.value === '' || userName.value == null) {
+    e.preventDefault()
+  }
+}) 
+
+

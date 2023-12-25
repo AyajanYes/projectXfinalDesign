@@ -8,7 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500&family=Open+Sans&family=Poppins:wght@400;600;700&family=Sen:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css" rel="stylesheet">
 
   <title>Ozge Tour</title>
@@ -23,11 +27,11 @@
 
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Главное</a></li>
-          <li class="nav__item"><a href="#aboutUs" class="nav__link">О нас</a></li>
-          <li class="nav__item"><a href="#review" class="nav__link">Отзывы</a></li>
-          <li class="nav__item"><a href="#package" class="nav__link">Услуги</a></li>
-          <li class="nav__item"><a href="#accessory" class="nav__link">Контакты</a></li>
+          <li class="nav__item"><a href="#home" class="nav__link">Басты бет</a></li>
+          <li class="nav__item"><a href="#review" class="nav__link">Қалалар</a></li>
+          <li class="nav__item"><a href="#benefits" class="nav__link">Ақпарат</a></li>
+          <li class="nav__item"><a href="#package" class="nav__link">Пакеттер</a></li>
+          <li class="nav__item"><a href="#footer" class="nav__link">Контакт</a></li>
         </ul>
       </div>
 
@@ -38,292 +42,306 @@
     </nav>  
   </header>
 
-  <main class="l-main">
+  <main class="l-main" id="main">
     <!--========== HOME ==========-->
     <div class="white-container">
-      <section class="home section bd-container" id="home">
-        <div class="home__container bd-grid">
+      <section class="home section" id="home">
+        <div class="home__container">
             <div class="home__data center-container">
-                <h2 class="section-title-center">Подберем для вас магазин прямо c 
-                  <span style="color: #E27A3F">Китая</span> для вашей нишы</h2>
-                <p class="home__description">Lorem ipsum dolor sit amet consectetur. 
-                  Rhoncus odio et ultricies nisl nisl arcu euismod. 
-                  At vitae feugiat tellus nam ornare risus scelerisque. 
+                <h2 class="section-title-center">— Қытайға бизнес тур —</h2>
                 </p>
-                <a href="#feedback" class="button">Купить</a>
-            </div>
-  
-            <div class="home__img">
-                <img src="assets/images/main-photo.png" alt="">
+                
             </div>
         </div>
       </section>
+      <a href="#feedback" class="home__button button">Толығырақ</a>
     </div>
     
     <!--========== ABOUT US ==========-->
-    <section class="aboutUs section bd-container" id="aboutUs">
-      <div class="center__container">
-        <h2 class="aboutUs__title">О нашей компании</h2>
-        <p class="aboutUs__descriprion">
-          Lorem ipsum dolor sit amet consectetur. Justo arcu fringilla diam 
-          tellus elit euismod sit sit potenti. Urna amet eu sit rutrum semper. 
-          Gravida lacus arcu mauris facilisis cursus ultrices nibh eu. Risus 
-          id duis elit varius molestie.
-        </p>
-      </div>
-      
-      <div class="aboutUs__container bd-grid">
-        <div class="aboutUs__data">
-          <div class="aboutUs__icon">
-            <img src="/assets/images/icon-aboutus1.svg" alt="">
-          </div>
-          <p class="aboutUs__content">5 лет на рынке</p>
+    <section class="aboutUs section" id="aboutUs">
+      <div class="bd-container">
+        <div class="center__container">
+          <h2 class="aboutUs__title">Бизнес тур кімге арналады?</h2>
         </div>
-        <div class="aboutUs__data">
-          <div class="aboutUs__icon">
-            <img src="/assets/images/icon-aboutus2.svg" alt="">
+        
+        <div class="aboutUs__container bd-grid">
+          <div class="aboutUs__data">
+            <img src="./assets/images/icon-business.png" alt="">
+            <div class="aboutUs__content">- Бизнесін масштабқа шығарғысы келетін кәсіпкерлерге</div>
           </div>
-          <p class="aboutUs__content">Более 5000 клиентов</p>
-        </div>
-        <div class="aboutUs__data">
-          <div class="aboutUs__icon">
-            <img src="/assets/images/icon-aboutus3.svg" alt="">
+          <div class="aboutUs__data">
+            <img src="./assets/images/icon-ides.webp" alt="">
+            <div class="aboutUs__content">- Жаңа бизнес идея іздеп жүрген кәсіпкерлерге</div>
           </div>
-          <p class="aboutUs__content">Большая команда</p>
+          <div class="aboutUs__data">
+            <img src="./assets/images/icon-boxes.webp" alt="">
+            <div class="aboutUs__content">- Оптовик болғысы келетін кәсіпкерлерге</div>
+          </div>
+          <div class="aboutUs__data">
+            <img src="./assets/images/icon-delivery van.webp" alt="">
+            <div class="aboutUs__content">- Товарка саласындағы кісіпкерлерге</div>
+          </div>
         </div>
-      </div>
+        <a href="#feedback" class="aboutUs__button button button-3d">Барғым келеді</a>
+      </div> 
     </section>
 
     <!--========== SLIDE ==========-->
-    <section class="slide-data section bd-container" id="review">
-      <div class="slide-container swiper">
-        <div class="slide-content">
-          <div class="card-wrapper swiper-wrapper">
-            <div class="card swiper-slide">
-              <div class="slide__image-content">
-                <span class="slide__overlay"></span>
-  
-                <div class="card-image">
-                  <img src="/assets/images/ian-dooley-d1UPkiFd04A-unsplash.jpg" alt="" class="card-img">
-                </div>
+    <section class="slide-data section" id="review">
+      <div class="bd-container">
+        <div class="center__container">
+          <h2 class="slider__title">БІЗ АРАЛАЙТЫН ҚАЛАЛАР</h2>
+        </div>
+        <div class="slide-container swiper">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <img src="./assets/images/yiwu.jpg" alt="">
+                <div class="card-text">ИУ</div>
               </div>
-  
-              <div class="card-content">
-                <h2 class="slide__name">Ivanov Ivan</h2>
-                <p class="slide__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aut quam consequatur! </p>
-              </div>
-            </div>
+              <div class="card swiper-slide">
+                <img src="./assets/images/guangzhou.jpg" alt="">
+                <div class="card-text">ГУАНЧЖОУ</div>
 
-            <div class="card swiper-slide">
-              <div class="slide__image-content">
-                <span class="slide__overlay"></span>
-  
-                <div class="card-image">
-                  <img src="/assets/images/darshan-patel-QJEVpydulGs-unsplash.jpg" alt="" class="card-img">
-                </div>
-              </div>
-  
-              <div class="card-content">
-                <h2 class="slide__name">Ivanov Ivan</h2>
-                <p class="slide__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aut quam consequatur! </p>
-              </div>
+              </div>  
+              <div class="swiper-button-next swiper-navBtn"></div>
+              <div class="swiper-button-prev swiper-navBtn"></div>          
             </div>
-
-            <div class="card swiper-slide">
-              <div class="slide__image-content">
-                <span class="slide__overlay"></span>
-  
-                <div class="card-image">
-                  <img src="/assets/images/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg" alt="" class="card-img">
-                </div>
-              </div>
-  
-              <div class="card-content">
-                <h2 class="slide__name">Ivanov Ivan</h2>
-                <p class="slide__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aut quam consequatur! </p>
-              </div>
-            </div>
-
-            <div class="card swiper-slide">
-              <div class="slide__image-content">
-                <span class="slide__overlay"></span>
-  
-                <div class="card-image">
-                  <img src="/assets/images/kelly-sikkema-JN0SUcTOig0-unsplash.jpg" alt="" class="card-img">
-                </div>
-              </div>
-  
-              <div class="card-content">
-                <h2 class="slide__name">Ivanov Ivan</h2>
-                <p class="slide__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aut quam consequatur! </p>
-              </div>
-            </div>
-
-            <div class="card swiper-slide">
-              <div class="slide__image-content">
-                <span class="slide__overlay"></span>
-  
-                <div class="card-image">
-                  <img src="/assets/images//noemi-macavei-katocz-or6mrFMVmHM-unsplash.jpg" alt="" class="card-img">
-                </div>
-              </div>
-  
-              <div class="card-content">
-                <h2 class="slide__name">Ivanov Ivan</h2>
-                <p class="slide__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aut quam consequatur! </p>
-              </div>
-            </div>
-            
           </div>
         </div>
-        <div class="swiper-button-next swiper-navBtn"></div>
-        <div class="swiper-button-prev swiper-navBtn"></div>
-        <div class="swiper-pagination"></div>
-
       </div>
     </section>
 
 
-    <!--========== PACKAGE ==========-->
-    <section class="package section bd-container" id="package">
-      <div class="center-container">
-        <h2 class="section-title">Пакеты</h2>
-        <p class="section-descriprion">Lorem ipsum dolor sit amet consectetur. Rhoncus odio et ultricies nisl nisl arcu euismod.</p>
+    <!--========== BENEFITS ==========-->
+    <section class="benefits section" id="benefits">
+      <div class="bd-container">
+        <div class="center__container">
+          <h2 class="benefits__title">Бизнес турдан не аласыз?</h2>
+        </div>
+        
+        <div class="benefits__container bd-grid">
+          <div class="benefits__data">
+            <div class="benefits__img">
+              <img src="./assets/images/gif-icon-cooperation.gif" alt="">
+            </div>
+            <div class="benefits__content">- Қытайдан сенімді партнерлер табасыз</div>
+          </div>
+          <div class="benefits__data">
+            <div class="benefits__img">
+              <img src="./assets/images/gif-icon-delivery.gif" alt="">
+            </div>
+            <div class="benefits__content">- Логистикалық компаниямен жұмыс жасауды түсінесіз</div>
+          </div>
+          <div class="benefits__data">
+            <div class="benefits__img">
+              <img src="./assets/images/gif-icon-products.gif" alt="">
+            </div>
+            <div class="benefits__content">- Қытайдан тауар жіберетін сенімді таныс табасыз</div>
+          </div>
+          <div class="benefits__data">
+            <div class="benefits__img">
+              <img src="./assets/images/gif-icon-factory.gif" alt="">
+            </div>
+            <div class="benefits__content">- Қандай зауыттармен жұмыс жасау керектігін анықтайсыз</div>
+          </div>
+        </div>
+        <div class="benefits__par">Қытайша білетін қазақ гидтер бүкіл тур бойы қолдау көрсететін болады.</div>
+        <a href="#feedback" class="benefits__button button button-3d">Саяхаттаймын</a>
       </div>
-      
-      <div class="package__container bd-grid">
-          <div class="package__data">
-              <h3 class="package__title">Сандарт</h3>
-              <p class="package__description">Lorem ipsum dolor sit amet consectetur.</p>
-              <p class="package__price">₸ 800 000</p>
-              <ul class="package__list">
-                <li class="package__item">
-                  <img src="/assets/images/icon-checkmark.svg" alt="">
-                  <p>Особенности</p>
-                </li>
-                <li class="package__item">
-                  <img src="/assets/images/icon-checkmark.svg" alt="">
-                  <p>Особенности</p>
-                </li>
-                <li class="package__item">
-                  <img src="/assets/images/icon-checkmark.svg" alt="">
-                  <p>Особенности</p>
-                </li>
-                <li class="package__item">
-                  <img src="/assets/images/icon-checkmark.svg" alt="">
-                  <p>Особенности</p>
-                </li>
-                <li class="package__item">
-                  <img src="/assets/images/icon-checkmark.svg" alt="">
-                  <p>Особенности</p>
-                </li>
-              </ul>
-              <div class="package__button">
-                <a href="#feedback" class="button button-full">
-                  <p>Купить</p>
-                  <img src="/assets/images/icon-right.svg" alt="">
-                </a>
-              </div>  
-          </div>
+    </section>
 
-          <div class="package__data">
-              <h3 class="package__title">Комбо</h3>
-              <p class="package__description">Lorem ipsum dolor sit amet consectetur.</p>
-              <p class="package__price">₸ 1 000 000</p>
-              <ul class="package__list">
-                <li class="package__item">
-                  <img src="/assets/images/icon-checkmark.svg" alt="">
-                  <p>Особенности</p>
-                </li>
-                <li class="package__item">
-                  <img src="/assets/images/icon-checkmark.svg" alt="">
-                  <p>Особенности</p>
-                </li>
-                <li class="package__item">
-                  <img src="/assets/images/icon-checkmark.svg" alt="">
-                  <p>Особенности</p>
-                </li>
-                <li class="package__item">
-                  <img src="/assets/images/icon-checkmark.svg" alt="">
-                  <p>Особенности</p>
-                </li>
-                <li class="package__item">
-                  <img src="/assets/images/icon-checkmark.svg" alt="">
-                  <p>Особенности</p>
-                </li>
-              </ul>
-              <div class="package__button">
-                <a href="#feedback" class="button button-full">
-                  <p>Купить</p>
-                  <img src="/assets/images/icon-right.svg" alt="">
-                </a>
-              </div>  
-          </div>
-
-          <div class="package__data">
-              <h3 class="package__title">Комбо+</h3>
-              <p class="package__description">Lorem ipsum dolor sit amet consectetur.</p>
-              <p class="package__price">₸ 1 200 000</p>
-              <ul class="package__list">
-                <li class="package__item">
-                  <img src="/assets/images/icon-checkmark.svg" alt="">
-                  <p>Особенности</p>
-                </li>
-                <li class="package__item">
-                  <img src="/assets/images/icon-checkmark.svg" alt="">
-                  <p>Особенности</p>
-                </li>
-                <li class="package__item">
-                  <img src="/assets/images/icon-checkmark.svg" alt="">
-                  <p>Особенности</p>
-                </li>
-                <li class="package__item">
-                  <img src="/assets/images/icon-checkmark.svg" alt="">
-                  <p>Особенности</p>
-                </li>
-                <li class="package__item">
-                  <img src="/assets/images/icon-checkmark.svg" alt="">
-                  <p>Особенности</p>
-                </li>
-              </ul>
-              <div class="package__button">
-                <a href="#feedback" class="button button-full">
-                  <p>Купить</p>
-                  <img src="/assets/images/icon-right.svg" alt="">
-                </a>
-              </div>  
-          </div>
+    <!--========== PACKAGE ==========-->
+    <section class="package section" id="package">
+      <div class="bd-container">
+        <div class="center-container">
+          <h2 class="section-title">Бизнес турдың құны</h2>
+        </div>
+        
+        <div class="package__container bd-grid">
+            <div class="package__data">
+                <h3 class="package__title">Сандарт</h3>
+                <p class="package__description">БҰЛ БАҒАҒА СІЗДІҢ БҮКІЛ ШЫҒЫНДАРЫҢЫЗ КІРЕДІ</p>
+                <p class="package__price">₸ 800 000</p>
+                <ul class="package__list">
+                  <li class="package__item">
+                    <img src="/assets/images/icon-visa.png" alt="">
+                    <p>- Қытайға виза алу</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-aeroplane.png" alt="">
+                    <p>- Ұшақ билеттері</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-hotel3.png" alt="">
+                    <p>- Қонақ үйлер</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-food.png" alt="">
+                    <p>- Күніне 3 мезгіл тамақ</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-bus.png" alt="">
+                    <p>- Трансфер әр қалада</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-tour-guide.png" alt="">
+                    <p>- Гид қызметі</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-list.png" alt="">
+                    <p>- Әр қаладағы арнайы ойын-сауық бағдарламасы</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-camera.png" alt="">
+                    <p>- Мобилографтың жалпы турдан түсірген жұмыстарына сілтеме</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-gift.png" alt="">
+                    <p>- <span style="color: green;">БОНУС</span>(7 күндік онлайн практикум)</p>
+                  </li>
+                </ul>
+                <div class="package__button">
+                  <a href="#feedback" class="button button-3d">Барғым келеді</a>
+                </div>  
+            </div>
+  
+            <div class="package__data">
+                <h3 class="package__title">Комбо</h3>
+                <p class="package__description">БҰЛ БАҒАҒА СІЗДІҢ БҮКІЛ ШЫҒЫНДАРЫҢЫЗ КІРЕДІ</p>
+                <p class="package__price">₸ 1 000 000</p>
+                <ul class="package__list">
+                  <li class="package__item">
+                    <img src="/assets/images/icon-visa.png" alt="">
+                    <p>- Қытайға виза алу</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-aeroplane.png" alt="">
+                    <p>- Ұшақ билеттері</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-hotel3.png" alt="">
+                    <p>- Қонақ үйлер</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-food.png" alt="">
+                    <p>- Күніне 3 мезгіл тамақ</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-bus.png" alt="">
+                    <p>- Трансфер әр қалада</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-tour-guide.png" alt="">
+                    <p>- Гид қызметі</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-list.png" alt="">
+                    <p>- Әр қаладағы арнайы ойын-сауық бағдарламасы</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-camera.png" alt="">
+                    <p>- Мобилографтың жалпы турдан түсірген жұмыстарына сілтеме</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-gift.png" alt="">
+                    <p>- <span style="color: green;">БОНУС</span>(7 күндік онлайн практикум)</p>
+                  </li>
+                </ul>
+                <div class="package__button">
+                  <a href="#feedback" class="button button-3d">Барғым келеді</a>
+                </div>   
+            </div>
+  
+            <div class="package__data">
+                <h3 class="package__title">Комбо+</h3>
+                <p class="package__description">БҰЛ БАҒАҒА СІЗДІҢ БҮКІЛ ШЫҒЫНДАРЫҢЫЗ КІРЕДІ</p>
+                <p class="package__price">₸ 1 200 000</p>
+                <ul class="package__list">
+                  <li class="package__item">
+                    <img src="/assets/images/icon-visa.png" alt="">
+                    <p>- Қытайға виза алу</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-aeroplane.png" alt="">
+                    <p>- Ұшақ билеттері</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-hotel3.png" alt="">
+                    <p>- Қонақ үйлер</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-food.png" alt="">
+                    <p>- Күніне 3 мезгіл тамақ</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-bus.png" alt="">
+                    <p>- Трансфер әр қалада</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-tour-guide.png" alt="">
+                    <p>- Гид қызметі</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-list.png" alt="">
+                    <p>- Әр қаладағы арнайы ойын-сауық бағдарламасы</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-camera.png" alt="">
+                    <p>- Мобилографтың жалпы турдан түсірген жұмыстарына сілтеме</p>
+                  </li>
+                  <li class="package__item">
+                    <img src="/assets/images/icon-gift.png" alt="">
+                    <p>- <span style="color: green;">БОНУС</span>(7 күндік онлайн практикум)</p>
+                  </li>
+                </ul>
+                <div class="package__button">
+                  <a href="#feedback" class="button button-3d">Барғым келеді</a>
+                </div>   
+            </div>
+        </div>
       </div>
     </section>
 
     <!--========== FEEDBACK FORM ==========-->
-    <section class="feedback section bd-container" id="feedback">
-      <h2 class="section-title">Оставьте заявку</h2>
-
-      <div class="feedback__container bd-grid">
-          <form action="" class="feedback__form">
-              <input class="feedback__input" type="text" name="name" placeholder="Имя">
-              <input class="feedback__input" type="email" name="email" placeholder="Email">
-              <input class="feedback__input" 
-                      type="tel" name="phone" 
-                      placeholder="+7(777)777-77-77" 
-                      pattern="[0-9()-]*">
-              <a href="#" class="button button-full">Отправить</a>
+    <section class="feedback section" id="feedback">
+      <div class="bd-container">
+        <div class="feedback__container bd-grid">
+          <img class="feedback__close" id='feedback-close' src="/assets/images/icon-close.svg" alt="">
+          
+          <form action="/" method="GET" class="feedback__form" id="form">
+            <input class="feedback__input" type="text" name="name" placeholder="Аты-жөніңіз" required>
+            <div id="error">Аты-жөніңізді енгізіңіз</div>
+            <input id="phone" 
+                    class="feedback__input" 
+                    type="tel" name="phone" 
+                    placeholder="(999) 999-99-99" 
+                    pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+            <input class="feedback__input" type="text" name="text" placeholder="Сіздің нишаңыз">
+            <button type="submit" class="button button-full">Жіберу</button>
           </form>
+        </div>
+      </div>
     </section>
-
   </main>
 
   <!--========== FOOTER ==========-->
   <footer class="footer section" id="footer">
-    <div class="footer__container bd-container">
+    <div class="footer__container bd-container bd-grid">
       <a href="#" class="footer__logo">
         <img src="assets/images/logo1.svg" alt="">
       </a>
-      <p class="footer__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, eius? Eius similique quae unde reiciendis! Natus quidem dolorem eum, veritatis aliquam illum.</p>
-      <a href="mailto:ayayess00@gmail.com" class="footer__email">ozge_tour@gmail.com</a>
-      <a href="tel:+77473798831" class="footer__tel">+7 (999) 999-99-99</a>
-
+      <p class="footer__text">Барлық құқықтар қорғалған</p>
+      <p class="footer__text">Байланыс телефоны:</p>
+      <a href="tel:+77273109977" class="footer__tel">+7 (727) 310-99-77</a>
+      <div class="footer__icons">
+        <a class="footer__icon" href="">
+          <img src="./assets/images/icon-instagram.svg" alt="">
+        </a>
+        <a class="footer__icon" href="https://wa.me/+77273109977">
+          <img src="./assets/images/icon-whatapp.svg" alt="">
+        </a>
+      </div>
       <p class="footer__copy">&#169; 2023 OzreTour. All right reserved</p>
 
     </div>
