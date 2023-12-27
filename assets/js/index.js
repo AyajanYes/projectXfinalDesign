@@ -71,18 +71,15 @@ var swiper = new Swiper(".slide-content", {
 
 const feedback = document.querySelector('#feedback')
 const feedbackClose = document.querySelector('#feedback-close')
-const main = document.querySelector('#main')
+const packageBtn = document.querySelectorAll('.package__button')
 
-main.addEventListener('click', (event) => {
-  const isButton = event.target.nodeName === 'A';
-  if (isButton) {
-    feedback.style.display = 'block'
-  } 
-  else return;
-})
+packageBtn.forEach((button) => {
+  button.addEventListener('click', () => {
+    feedback.style.display = 'block';
+  });
+});
 
 feedbackClose.addEventListener('click', () => {
-  console.log('hellllooooo')
   feedback.style.display = 'none'
 })
 
