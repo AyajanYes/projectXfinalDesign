@@ -1,5 +1,5 @@
 /*===== GOOGLE FONTS =====*/
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 /*===== VARIABLES CSS =====*/
 :root {
@@ -29,7 +29,7 @@
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
-  --normal-font-size: .938rem;
+  --normal-font-size: 1rem;
   --small-font-size: .813rem;
 
   /*========== Font weight ==========*/
@@ -318,7 +318,7 @@ img{
 
 .white-container {
   width: 100vw;
-  background: url('/assets/images/china-wallpaper2.jpg') 50% 0/cover no-repeat;
+  background: url('/assets/images/chine-wallpaper3.jpg') 50% 0/cover no-repeat;
   height: 100vh;
   position: relative;
   display: flex;
@@ -348,7 +348,7 @@ img{
 .home__button {
   font-size: var(--h2-font-size);
   position: absolute;
-  bottom: 70%;
+  bottom: 20%;
   animation: pulse 1s infinite;
 }
 
@@ -399,6 +399,10 @@ img{
   right: 0;
 }
 
+.aboutUs__data:nth-child(2) img {
+  width: 60%;
+}
+
 .aboutUs__title,
 .section-title,
 .slider__title,
@@ -420,7 +424,7 @@ img{
   position: absolute;
   top: 10%;
   color:var(--container-color);
-  font-size: var(--normal-font-size);
+  font-size: var(--h3-font-size);
   white-space: pre-wrap;
   padding-left: 10px;
 }
@@ -458,10 +462,14 @@ img{
   display: inline-block;
   font-size: var(--biggest-font-size);
   font-weight: var(--font-bold);
-	background: linear-gradient(180deg, rgba(255,255,255, 1) 20%, 
+	background: linear-gradient(270deg, rgba(255,255,255, 1) 20%, 
+  rgba(255,255,255, 0) 80%);
+  background: -webkit-linear-gradient(270deg, rgba(255,255,255, 1) 20%, 
   rgba(255,255,255, 0) 80%);
 	background-clip: text;
+  -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .swiper-cards {
@@ -834,10 +842,6 @@ img{
     padding: 2rem 2rem;
   }
 
-  .home__button {
-    bottom: 60%;
-  }
-
   .share__container{
     padding: 0 2rem;
   }
@@ -893,6 +897,6 @@ img{
   }
 
   .home__button {
-    bottom: 55%;
+    bottom: 10%;
   }
 }
